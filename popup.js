@@ -18,6 +18,9 @@ function social_handler() {
   }
   else {
       document.getElementById("social").style.display = 'block';
+      document.getElementById("health").style.display = 'none';
+      document.getElementById("notes").style.display = 'none';
+      document.getElementById("focus").style.display = 'none';
   }
 }
 
@@ -26,22 +29,28 @@ function health_handler() {
     document.getElementById("health").style.display = 'none';
   }
   else {
-      document.getElementById("health").style.display = 'block';
-  }
+    document.getElementById("social").style.display = 'none';
+    document.getElementById("health").style.display = 'block';
+    document.getElementById("notes").style.display = 'none';
+    document.getElementById("focus").style.display = 'none';  }
 }
 function notes_handler() {
   if (document.getElementById("notes").style.display !== 'none') {
     document.getElementById("notes").style.display = 'none';
   }
   else {
-      document.getElementById("notes").style.display = 'block';
-  }
+    document.getElementById("social").style.display = 'none';
+    document.getElementById("health").style.display = 'none';
+    document.getElementById("notes").style.display = 'block';
+    document.getElementById("focus").style.display = 'none';  }
 }
 function focus_handler() {
   if (document.getElementById("focus").style.display !== 'none') {
     document.getElementById("focus").style.display = 'none';
   }
   else {
-      document.getElementById("focus").style.display = 'block';
-  }
+    document.getElementById("social").style.display = 'none';
+    document.getElementById("health").style.display = 'none';
+    document.getElementById("notes").style.display = 'none';
+    document.getElementById("focus").style.display = 'block';  }
 }
