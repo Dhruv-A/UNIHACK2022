@@ -1,24 +1,47 @@
-// Initialize butotn with users's prefered color
-let changeColor = document.getElementById("changeColor");
-
-chrome.storage.sync.get("color", ({ color }) => {
-  changeColor.style.backgroundColor = color;
+document.addEventListener('DOMContentLoaded', function() {
+  document.getElementById("social_button").addEventListener("click", social_handler);
+});
+document.addEventListener('DOMContentLoaded', function() {
+  document.getElementById("health_button").addEventListener("click", health_handler);
+});
+document.addEventListener('DOMContentLoaded', function() {
+  document.getElementById("notes_button").addEventListener("click", notes_handler);
+});
+document.addEventListener('DOMContentLoaded', function() {
+  document.getElementById("focus_button").addEventListener("click", focus_handler);
 });
 
-// When the button is clicked, inject setPageBackgroundColor into current page
-changeColor.addEventListener("click", async () => {
-  let [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
+// The handler also must go in a .js file
+function social_handler() {
+  if (document.getElementById("social").style.display !== 'none') {
+    document.getElementById("social").style.display = 'none';
+  }
+  else {
+      document.getElementById("social").style.display = 'block';
+  }
+}
 
-  chrome.scripting.executeScript({
-    target: { tabId: tab.id },
-    function: setPageBackgroundColor,
-  });
-});
-
-// The body of this function will be execuetd as a content script inside the
-// current page
-function setPageBackgroundColor() {
-  chrome.storage.sync.get("color", ({ color }) => {
-    document.body.style.backgroundColor = color;
-  });
+function health_handler() {
+  if (document.getElementById("health").style.display !== 'none') {
+    document.getElementById("health").style.display = 'none';
+  }
+  else {
+      document.getElementById("health").style.display = 'block';
+  }
+}
+function notes_handler() {
+  if (document.getElementById("notes").style.display !== 'none') {
+    document.getElementById("notes").style.display = 'none';
+  }
+  else {
+      document.getElementById("notes").style.display = 'block';
+  }
+}
+function focus_handler() {
+  if (document.getElementById("focus").style.display !== 'none') {
+    document.getElementById("focus").style.display = 'none';
+  }
+  else {
+      document.getElementById("focus").style.display = 'block';
+  }
 }

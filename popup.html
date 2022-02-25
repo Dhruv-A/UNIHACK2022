@@ -2,9 +2,33 @@
 <html>
   <head>
     <link rel="stylesheet" href="button.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
-    <button id="changeColor"></button>
     <script src="popup.js"></script>
+    <div id="homebar" class="toolbar">
+      <button class="fa-solid fa-user-group home-btn" id="social_button"></button>
+      <button class="fa-solid fa-heart-pulse home-btn" id="health_button"></button>
+      <button class="fa-solid fa-hourglass home-btn" id="notes_button"></button>
+      <button class="fa-solid fa-note-sticky home-btn" id="focus_button"></button>
+
+    </div>
+    <div id="social" style="display: none;">
+        <!-- this is what shows up after you click on the social icon -->
+        <h1>hi ween</h1>
+    </div>
+    <div id="health" style="display: none;">
+        <!-- this is what shows up after you click on the health icon -->
+        <h1>hi emileeee</h1>
+    </div>
+    <div id="notes" style="display: none;">
+      <!-- this is what shows up after you click on the notes icon -->
+      <h1>hi eliza</h1>
+    </div>
+    <div id="focus" style="display: none;">
+      <!-- this is what shows up after you click on the focus icon -->
+      <h1>hi sealeeaaa</h1>
+    </div>
   </body>
 </html>
