@@ -1,10 +1,24 @@
 document.addEventListener('DOMContentLoaded', function() {
+
+  // Toolbar
   document.getElementById("social_button").addEventListener("click", social_handler);
   document.getElementById("health_button").addEventListener("click", health_handler);
   document.getElementById("notes_button").addEventListener("click", notes_handler);
   document.getElementById("focus_button").addEventListener("click", focus_handler);
   document.getElementById("meetings_button").addEventListener("click", meetings_handler);
+
+  // Create new meeting
+  document.getElementById().addEventListener("click", function(){
+    fetch('place_link_here')
+    .then(response.json());
+  })
+  .then(link => {
+    console.log(link);
+  })
+
+
 });
+
 
 
 // The handler also must go in a .js file
