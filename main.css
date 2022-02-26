@@ -4,9 +4,20 @@
 }
 
 body {
-    margin: 0.3em;
+    margin: 0em;
+    padding: 0.25em;
 }
 
 .home-btn {
     background-color: transparent;
+    margin: 0em;
+    padding: 10ems;
+}
+
+.home-btn:hover {
+    background-color: rgba(211, 211, 211, 50)
+}
+
+.home-btn:active {
+    color: white;
 }
