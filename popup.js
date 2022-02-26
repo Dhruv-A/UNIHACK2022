@@ -8,17 +8,13 @@ document.addEventListener('DOMContentLoaded', function() {
   document.getElementById("meetings_button").addEventListener("click", meetings_handler);
 
   // Create new meeting
-  document.getElementById().addEventListener("click", function(){
-    fetch('place_link_here')
-    .then(response.json());
+  document.getElementById("new-meeting").addEventListener("click", function(){
+    fetch('https://gracefulbrownparameters.dhruvagrawal.repl.co/social/create/group/potato.gmail.com', { mode: 'no-cors'})
+    .then(response => {
+      return response.json()
+    });
   })
-  .then(link => {
-    console.log(link);
-  })
-
-
 });
-
 
 
 // The handler also must go in a .js file
