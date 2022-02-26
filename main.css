@@ -37,10 +37,10 @@ body {
     display: inline-block;
 }
 
-#new-meeting {
+#email-submit {
     width: 5em;
 }
 
-#new-meeting:active {
+#email-submit:active {
     background-color: green;
 }

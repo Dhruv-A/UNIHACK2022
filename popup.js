@@ -7,16 +7,27 @@ document.addEventListener('DOMContentLoaded', function() {
   document.getElementById("focus_button").addEventListener("click", focus_handler);
   document.getElementById("meetings_button").addEventListener("click", meetings_handler);
 
-  // Create new meeting
-  document.getElementById("new-meeting").addEventListener("click", function(){
-    fetch('https://gracefulbrownparameters.dhruvagrawal.repl.co/social/create/group/potato.gmail.com', { mode: 'no-cors'})
+  // submit email
+  const submitemailform = document.querySelector('#email-form');
+  submitemailform.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const email = submitemailform['email'].value;
+    fetch('https://gracefulbrownparameters.dhruvagrawal.repl.co/social/create/group/' + email)
     .then(response => {
-      return response.json()
+      console.log(response.json())
+      const social = document.querySelector('#social');
+      const html = `
+        <h1>POAOTOTA</h1>
+      `;
+      social.innerHTML = html;
+
     });
-  })
+  });
 });
 
 
+
+ 
 // The handler also must go in a .js file
 function social_handler() {
   if (document.getElementById("social").style.display !== 'none') {
