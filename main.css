@@ -10,3 +10,18 @@ body {
 .home-btn {
     background-color: transparent;
 }
+
+.healthfocus {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.health-btn {
+    height: 25px;
+    width: 25px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
