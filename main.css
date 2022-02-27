@@ -1,25 +1,29 @@
 .toolbar {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0em;
+    padding-top: 0em;
 }
 
 body {
-    margin: 0.3em;
-    padding: 0.25em;
+    width: 30em;
+    margin: 0em;
+    font-family: 'Questrial', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .home-btn {
     background-color: transparent;
-    margin: 0em;
-    padding: 10ems;
+    margin: 0.1em 0.5em;
+    color: #3B969C;
+    font-size: 1.2em;
+    text-align: left;
 }
 
 .home-btn:hover {
     background-color: rgba(211, 211, 211, 50)
-}
-
-.home-btn:active {
-    color: white;
 }
 
 .healthfocus {
@@ -30,17 +34,180 @@ body {
 }
 
 .health-btn {
-    height: 25px;
-    width: 25px;
+    height: 5em;
+    width: 5em;
     background-color: #bbb;
     border-radius: 50%;
     display: inline-block;
 }
 
-#email-submit {
+.email-submit {
+    background-color: #FFA553;
+    text-align: center;
+    position: absolute;
+    bottom: 1.05em;
+    right: 2em;
+    width: auto;
+    border-radius: 25px;
+    height: 1.8em;
     width: 5em;
+    font-weight: bold;
 }
 
-#email-submit:active {
+.email-submit:active {
     background-color: green;
 }
+
+.expanded-section {
+    background-color: #BAF0F5;
+    margin: 0em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.rectangle {
+    width: 25em;
+    margin: 1em 0em;
+    background-color: #FFF4B9;
+    border-radius: 5px;
+    border-top: solid white 2em;
+    padding-bottom: 2em;
+}
+
+.mascot {
+    width: 4.5em;
+    position: absolute;
+    bottom: 0;
+    left: -0.5em;
+    padding: 1em;
+}
+
+h1 {
+    margin: 0;
+    position: absolute;
+    top: 3em;
+    font-size: 1.3em;
+    color: #FF8A1E;
+    left: 4em;
+    font-weight: bold;
+}
+
+.text-box {
+    margin: 1em 3em;
+    color: #AA3C19;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#email {
+    width: 11em;
+}
+
+.matched {
+    text-align: center;
+    padding-bottom: 2em;
+}
+
+#zoom {
+    background-color: #FFA553;
+    text-align: center;
+    border-radius: 10px;
+    padding: 1em;
+}
+
+.notes {
+    height: 10em;
+    width: 22.2em;
+    background-color: #FFF4B9;
+    border: none;
+    margin-top: -2.5em;
+    margin-bottom: 1em;
+}
+
+.notes:hover {
+    outline: solid rgba(211, 211, 211, 50);
+}
+
+.notes:focus {
+    outline: none;
+}
+
+.introbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.pair {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro-btn {
+    background-color: white;
+    color: #FF8A1E;
+    border-radius: 100%;
+    font-size: 1.5em;
+    height: 2.5em;
+    width:2.5em;
+    text-align: center;
+}
+
+#circle-mascot {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 10em;
+    width: 10em;
+}
+
+.today-question {
+    text-align: center;
+    font-size: 1.5em;
+    color: #4B6567;
+    font-weight: bold;
+    
+}
+
+.today-question span {
+    background-color: #EFFEFF;
+    border-radius: 25px;
+    padding: 0.5em;
+}
+
+.label {
+    background-color: #FFA553;
+    padding: 0.3em 0.5em;
+    margin: 0em 0.75em;
+    border-radius: 25px;
+    color: white;
+}
+
+/* 
+.circle-btn
+{
+  all:unset;
+  background-color: #e6e5e0;
+  border-radius: 100%;
+  text-align: center;
+  width: 120px;
+  height: 120px;
+  border: solid;
+  border-color: #e6e5e0;
+  border-width: 2px;
+  color: #9071ba;
+  font-weight: 1000;
+  font-size: 30px;
+}
+
+.circle-btn:hover
+{
+  background-color: #9071ba;
+  border-color: #9071ba;
+  color: #e6e5e0;
+} */

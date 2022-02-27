@@ -3,49 +3,98 @@
   <head>
     <link rel="stylesheet" href="button.css">
     <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&family=Roboto:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="popup.js"></script>
   </head>
   <body>
-    <script src="popup.js"></script>
-    <div id="homebar" class="toolbar">
-      <button class="fa-solid fa-user-group home-btn" id="social_button"></button>
-      <button class="fa-solid fa-heart-pulse home-btn" id="health_button"></button>
-      <button class="fa-solid fa-hourglass home-btn" id="notes_button"></button>
-      <button class="fa-solid fa-note-sticky home-btn" id="focus_button"></button>
-      <button class="fa-solid fa-calendar-check home-btn" id="meetings_button"></button>
-
+    <div id="homebar"  style="display: none;">
+      <div  class="toolbar">
+        <button class="fa-solid fa-user-group home-btn" id="social_button"></button>
+        <button class="fa-solid fa-heart-pulse home-btn" id="health_button"></button>
+        <button class="fa-solid fa-hourglass home-btn" id="focus_button"></button>
+        <button class="fa-solid fa-note-sticky home-btn" id="notes_button"></button>
+        <button class="fa-solid fa-calendar-check home-btn" id="meetings_button"></button>
+      </div>
     </div>
-    <div id="social" style="display: none;">
-        <!-- this is what shows up after you click on the social icon -->
-        <form id="email-form">
-          <div class="input-field">
-            <label for="email">Email</label>
-            <input type="email" id="email" required />
+    
+    <div class="expanded-section">
+
+      <div id="intro"> 
+        <p class="today-question"><span>What is your focus for today?</span></p>
+        <img src="images/circle.png" id="circle-mascot">
+        <div class="introbar">
+          <div class="pair">
+            <button class="fa-solid fa-user-group intro-btn" id="social-btn"></button>
+            <span class="label">Social</span>
           </div>
-          <button class="email-submit">Submit</button>
-        </form>
-    </div>
-    <div id="health" style="display: none;">
-        <!-- this is what shows up after you click on the health icon -->
-        <h1>Today's focus</h1>
-        <div class="healthfocus">
-          <button class="fa-solid fa-droplet health-btn"></button>
-          <button class="fa-solid fa-utensils health-btn"></button>
-          <button class="fa-solid fa-person-walking health-btn"></button>
-
+          <div class="pair">
+            <button class="fa-solid fa-heart-pulse intro-btn" id="health-btn"></button>
+            <span class="label">Health</span>
+          </div>
+          <div class="pair">
+            <button class="fa-solid fa-hourglass intro-btn" id="focus-btn"></button>
+            <span class="label">Focus</span>
+          </div>
+          <div class="pair">
+            <button class="fa-solid fa-note-sticky intro-btn" id="notes-btn"></button>
+            <span class="label">Notes</span>
+          </div>
+          <div class="pair">
+            <button class="fa-solid fa-calendar-check intro-btn" id="meetings-btn"></button>
+            <span class="label">Meetings</span>
+          </div>
         </div>
+        <br>
+      </div>
+
+      <div id="social" style="display: none;">
+        <!-- this is what shows up after you click on the social icon -->
+        <div class="rectangle">
+          <h1>#thinkandthonk</h1>
+          <p class="text-box">
+            Would you rather be able to see 10 minutes into the future or 100 years into the past?
+            <form id="email-form">
+              <div class="input-field text-box">
+                <label for="email" style="font-weight: bold;">Email</label>
+                <input type="email" id="email" style="border-radius: 10px; border: none;" required />
+              </div>
+              <button class="email-submit">Chat</button>
+            </form>
+          </p>
+          <img class="mascot" src="images/mascot.png">
+        </div>
+      </div>
+
+      <div id="health" style="display: none;">
+          <!-- this is what shows up after you click on the health icon -->
+          <div class="healthfocus">
+            <button class="fa-solid fa-droplet health-btn"></button>
+            <button class="fa-solid fa-utensils health-btn"></button>
+            <button class="fa-solid fa-person-walking health-btn"></button>
+          </div>
+      </div>
+      
+      <div id="focus" style="display: none;">
+        <!-- this is what shows up after you click on the focus icon -->
+        <p>sfdjdsakjfkljdas</p>
+      </div>
+
+      <div id="notes" style="display: none;">
+        <div class="rectangle">
+          <h1>Notes</h1>
+        </div>
+        <textarea class="notes" type="text"></textarea>
+      </div>
+
+      <div id="meetings" style="display: none;">
+        <!-- this is what shows up after you click on the notes icon -->
+        <p>potato</p>
+      </div>
+
     </div>
-    <div id="notes" style="display: none;">
-      <!-- this is what shows up after you click on the notes icon -->
-      <h1>hi eliza</h1>
-    </div>
-    <div id="focus" style="display: none;">
-      <!-- this is what shows up after you click on the focus icon -->
-      <h1>hi sealeeaaa</h1>
-    </div>
-    <div id="meetings" style="display: none;">
-      <!-- this is what shows up after you click on the notes icon -->
-      <h1>hi eliza</h1>
-    </div>
+    
   </body>
 </html>
