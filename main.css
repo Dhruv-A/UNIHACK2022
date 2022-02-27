@@ -34,11 +34,14 @@ body {
 }
 
 .health-btn {
-    height: 5em;
-    width: 5em;
-    background-color: #bbb;
+    margin: 2em 0.5em;
+    height: 3em;
+    width: 3em;
+    background-color: #FFF4B9;
     border-radius: 50%;
     display: inline-block;
+    color: #FFA553;
+    font-size: 2em;
 }
 
 .email-submit {
@@ -188,26 +191,3 @@ h1 {
     color: white;
 }
 
-/* 
-.circle-btn
-{
-  all:unset;
-  background-color: #e6e5e0;
-  border-radius: 100%;
-  text-align: center;
-  width: 120px;
-  height: 120px;
-  border: solid;
-  border-color: #e6e5e0;
-  border-width: 2px;
-  color: #9071ba;
-  font-weight: 1000;
-  font-size: 30px;
-}
-
-.circle-btn:hover
-{
-  background-color: #9071ba;
-  border-color: #9071ba;
-  color: #e6e5e0;
-} */

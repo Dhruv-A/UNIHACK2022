@@ -1,23 +1,23 @@
 {
-  "name": "Seaweed from Home",
-  "description": "Eat some seaweed and work from home",
+  "name": "Remobi Toolkit",
+  "description": "Remobi, your work from home buddy is here to make working from home fun and exciting.",
   "version": "1.0",
   "manifest_version": 3,
   "permissions": ["storage", "activeTab", "scripting"],
   "action": {
     "default_popup": "popup.html",
     "default_icon": {
-      "16": "/images/get_started16.png",
-      "32": "/images/get_started32.png",
-      "48": "/images/get_started48.png",
-      "128": "/images/get_started128.png"
+      "16": "/images/mascot.png",
+      "32": "/images/mascot.png",
+      "48": "/images/mascot.png",
+      "128": "/images/mascot"
     }
   },
   "icons": {
-    "16": "/images/get_started16.png",
-    "32": "/images/get_started32.png",
-    "48": "/images/get_started48.png",
-    "128": "/images/get_started128.png"
+    "16": "/images/mascot.png",
+    "32": "/images/mascot.png",
+    "48": "/images/mascot.png",
+    "128": "/images/mascot.png"
   },
   "options_page": "options.html"
 }

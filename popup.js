@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
   });
   document.getElementById("meetings-btn").addEventListener("click", function() {
     leave_home()
-    notes_handler()
+    meetings_handler()
   });
 
   // submit email
